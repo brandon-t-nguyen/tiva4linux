@@ -4,7 +4,7 @@ This repository is composed of a script to help automate installation of a TI Ti
 Due to licensing issues, the Tivaware itself is not packaged in this repo. You will have to download it yourself.
 
 This is only possible due to the guide here: http://chrisrm.com/howto-develop-on-the-ti-tiva-launchpad-using-linux/
-and the repos https://github.com/uctools/tiva-template and  https://github.com/uctools/tiva-template
+and the repos https://github.com/uctools/tiva-template and https://github.com/utzig/lm4tools
 
 ### Dependencies
 There are multiple dependencies needed. Consult your package manager for installation if you aren't using apt:
@@ -35,7 +35,10 @@ Otherwise, download it directly and add the binaries to your PATH:  https://laun
 ### Tivaware
 Once the dependencies are resolved, you will need the latest version of the TM4C123 Tivaware from the TI website: http://software-dl.ti.com/tiva-c/SW-TM4C/latest/index_FDS.html
 
-Download the "TivaWare for TM4C Series" version. *Put it in this repo's directory under the name "tivaware.exe"*.
+Download the "TivaWare for TM4C Series" version. **Put it in this repo's directory under the name "tivaware.exe"**.
 
 ### Running
 Run the script lm4linux.sh
+
+### Afterword
+Consult the https://github.com/utzig/lm4tools and https://github.com/uctools/tiva-template repos and http://chrisrm.com/howto-develop-on-the-ti-tiva-launchpad-using-linux/ for more information on things such as OpenOCD and how to run the debugger.
