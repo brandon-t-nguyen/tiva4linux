@@ -9,6 +9,11 @@ fi
 
 proj_name=$1
 
+if [ -e ./$proj_name ]; then
+    echo "ERROR: project \"$proj_name\" already exists"
+    exit 1
+fi
+
 target=$proj_name
 cp -r ../tiva-template $target
 cd $target
